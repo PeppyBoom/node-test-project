@@ -1,0 +1,8 @@
+<% layout('./layout/page')%>
+<% block('title', 'MyApp')%>
+
+<p class="lead">Вы попали на страницу MyApp</p>
+<% if (user) {%>
+<p>Добро пожаловать <%=user.get('username')%></p>
+<%}%>
+<%=issues%>
